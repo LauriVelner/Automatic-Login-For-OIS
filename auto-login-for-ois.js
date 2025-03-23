@@ -2,7 +2,7 @@
 // @name         Automatic Login for ÕIS
 // @namespace    http://tampermonkey.net/
 // @version      2025-03-01
-// @description  EST: Skript, mis automaatselt logib kasutaja ÕIS-i. ENG: Userscript, which automatically signs the user into their account.
+// @description  Skript, mis automaatselt logib kasutaja ÕIS-i / Userscript, which automatically signs the user into their account
 // @author       Lauri Velner
 // @match        https://ois2.ut.ee/*
 // @match        https://auth.ut.ee/*
@@ -16,8 +16,6 @@
 
 // To do: comments + make english logic more robust + make action dependant on current website
 // Add saving passwords
-// Mention in the readme that people will still have to do the auth thing with the app every 180 days
-// Make a clear case why this is a good userscript (being constantly logged off is annoying and frustrating, plus a hinderance to academic productivity as every annoyance like this is)
 // Make an extension
 // Test for other browsers: chrome, safari, opera, edge, internet explorer
 // Possibly make compatible for older versions/browsers
