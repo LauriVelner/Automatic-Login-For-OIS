@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Automatic Login for ÕIS
 // @namespace    http://tampermonkey.net/
-// @version      2025-03-01
+// @version      2025-03-25
 // @description  Skript, mis automaatselt logib kasutaja ÕIS-i / Userscript, which automatically signs the user into their account
 // @author       Lauri Velner
 // @match        https://ois2.ut.ee/*
