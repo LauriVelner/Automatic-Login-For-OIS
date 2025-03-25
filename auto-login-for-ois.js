@@ -4,6 +4,8 @@
 // @version      2025-03-25
 // @description  Skript, mis automaatselt logib kasutaja ÕIS-i / Userscript, which automatically signs the user into their account
 // @author       Lauri Velner
+// @downloadURL  https://github.com/LauriVelner/Automatic-Login-For-OIS/raw/main/auto-login-for-ois.js
+// @updateURL    https://github.com/LauriVelner/Automatic-Login-For-OIS/raw/main/auto-login-for-ois.js
 // @match        https://ois2.ut.ee/*
 // @match        https://auth.ut.ee/*
 // @match        https://moodle.ut.ee/*
