@@ -3,6 +3,9 @@
 
 Iga 180 päeva tagant tuleb end audentida läbi vastava rakenduse, aga peale selle teeb see skript kõik vajaliku, et sisselogimisprotsess oleks kiire ja ei lase kasutajat mitteaktiivsuse tõttu välja logida.
 
+## Kasutamine
+Kui parool ja email on juba brauseri mälus, siis pole vaja midagi teha.  
+
 ## Kuidas alla laadida?
 1. Et skripti joosta, on vaja *userscript*e haldavat brauserilaiendit. Tampermonkey on üks neist:
 

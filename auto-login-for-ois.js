@@ -20,6 +20,9 @@
 // Test for other browsers: chrome, safari, opera, edge, internet explorer
 // Possibly make compatible for older versions/browsers
 // Possibly add recommendation to update browser if too old
+// "You signed out of your account" handling for login.microsoftonline
+
+// Redirect from https://auth.ut.ee/idp/module.php/core/frontpage_welcome.php
 
 // MutationObservers are optimized for monitoring changes to the DOM. They’re generally lightweight if you scope them to a limited subtree or specific mutations
 
@@ -32,6 +35,15 @@ https://*.microsoftonline-p.com https://*.microsoftazuread-sso.com https://*.azu
 */
 (function() {
     'use strict';
+
+    // Prior to allowing access to your outlook mailbox, your authentication is checked
+    // It's separate from the ÕIS auth., and has a time limit, necessitating you to
+    // log back in after it expires. The issue is that there's an annoying log out screen it send you to
+    // when it checks your authentication status and it turns out the authentification has expired
+    // This fixes the issue, redirecting from the log out screen back to the mailbox.
+    if (window.location.href.indexOf("https://login.microsoftonline.com/common/oauth2/logout") !== -1) {
+        window.location.href = "https://outlook.office.com/mail/";
+    }
 
     window.addEventListener('load', () => {
         // ÕIS auth page (https://auth.ut.ee/) accessed after clicking login
